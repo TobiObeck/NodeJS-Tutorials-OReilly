@@ -1,0 +1,10 @@
+var express = require('express');
+
+var app = express(); //deprecated var app = express.createServer();
+
+app.get('/', function(req, res)
+{
+	res.send('Willkommen bei Node Twitter');
+});
+
+app.listen(8000);
